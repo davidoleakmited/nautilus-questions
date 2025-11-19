@@ -1,0 +1,384 @@
+{
+  "twin": {
+    "author": "Mathis Guyot",
+    "title": "Questions pour le jeu de données Twin",
+    "description": "Questions pour le jeu de données Twin",
+    "version": "1.0.0",
+    "date": "2025-11-19",
+    "license": "MIT",
+    "tags": ["twin", "questions", "jeu de données"],
+    "levels": {
+      "n00b": [
+        {
+          "id": "N00B_01",
+          "intent": "lecture",
+          "type": "attributaire",
+          "question": "Quelle est la longueur totale du réseau ?"
+        },
+        {
+          "id": "N00B_02",
+          "intent": "lecture",
+          "type": "attributaire",
+          "question": "Quelle est la longueur de canalisations par commune ?"
+        },
+        {
+          "id": "N00B_03",
+          "intent": "lecture",
+          "type": "attributaire",
+          "question": "Quelle est la répartition des diamètres sur le réseau ?"
+        },
+        {
+          "id": "N00B_04",
+          "intent": "lecture",
+          "type": "attributaire",
+          "question": "Quels sont les types de matériaux utilisés ?"
+        },
+        {
+          "id": "N00B_05",
+          "intent": "lecture",
+          "type": "attributaire",
+          "question": "Combien de branchements sont recensés ?"
+        },
+        {
+          "id": "N00B_06",
+          "intent": "lecture",
+          "type": "spatial",
+          "question": "Où se trouvent les réservoirs, stations de pompage, surpresseurs et usines de production ?"
+        },
+        {
+          "id": "N00B_07",
+          "intent": "lecture",
+          "type": "attributaire",
+          "question": "Combien de réservoirs, stations de pompage, surpresseurs et usines de production le réseau comporte-t-il ?"
+        },
+        {
+          "id": "N00B_08",
+          "intent": "lecture",
+          "type": "spatial",
+          "question": "Où sont positionnées les bornes et poteaux incendie ?"
+        },
+        {
+          "id": "N00B_09",
+          "intent": "lecture",
+          "type": "spatial",
+          "question": "Quels tronçons appartiennent à la commune de X ?"
+        },
+        {
+          "id": "N00B_10",
+          "intent": "lecture",
+          "type": "attributaire",
+          "question": "Quelles sont les conduites les plus récentes ?"
+        },
+        {
+          "id": "N00B_11",
+          "intent": "lecture",
+          "type": "spatial",
+          "question": "Où sont les points d'extrémité du réseau ?"
+        },
+        {
+          "id": "N00B_12",
+          "intent": "agrégation",
+          "type": "statistique",
+          "question": "Quelle est la densité de réseau (km/km²) par commune ?"
+        },
+        {
+          "id": "N00B_13",
+          "intent": "agrégation",
+          "type": "attributaire",
+          "question": "Quelles sont les canalisations qui ont le plus d'abonnés ?"
+        }
+      ],
+      "easy": [
+        {
+          "id": "EASY_01",
+          "intent": "agrégation",
+          "type": "attributaire",
+          "question": "Quelles conduites sont en PVC, fonte, amiante, béton, etc. ?"
+        },
+        {
+          "id": "EASY_02",
+          "intent": "agrégation",
+          "type": "attributaire",
+          "question": "Quelle est la longueur totale de conduites par matériau ?"
+        },
+        {
+          "id": "EASY_03",
+          "intent": "statistique",
+          "type": "attributaire",
+          "question": "Quelle proportion du réseau a un diamètre supérieur ou inférieur à 100 mm ?"
+        },
+        {
+          "id": "EASY_04",
+          "intent": "spatial",
+          "type": "géographique",
+          "question": "Quels tronçons se trouvent en zone urbaine, rurale, lotissement ou champ ?"
+        },
+        {
+          "id": "EASY_05",
+          "intent": "agrégation",
+          "type": "attributaire",
+          "question": "Combien de branchements par secteur de distribution, UDI ou commune ?"
+        },
+        {
+          "id": "EASY_06",
+          "intent": "spatial",
+          "type": "géographique",
+          "question": "Quelles conduites traversent une route principale ?"
+        },
+        {
+          "id": "EASY_07",
+          "intent": "agrégation",
+          "type": "attributaire",
+          "question": "Combien de conduites ont un diamètre inconnu ?"
+        },
+        {
+          "id": "EASY_08",
+          "intent": "agrégation",
+          "type": "attributaire",
+          "question": "Quelle est la longueur totale du réseau en fonte grise ?"
+        },
+        {
+          "id": "EASY_09",
+          "intent": "agrégation",
+          "type": "attributaire",
+          "question": "Combien de conduites ont une date de pose inconnue ?"
+        },
+        {
+          "id": "EASY_10",
+          "intent": "lecture",
+          "type": "temporel",
+          "question": "Peux-tu me montrer les canalisations de plus de 70 ans ?"
+        },
+        {
+          "id": "EASY_11",
+          "intent": "agrégation",
+          "type": "attributaire",
+          "question": "Quelle est la longueur de réseau par type de gestion (publique/privée) ou délégataire ?"
+        }
+      ],
+      "average_hydraulic_mc": [
+        {
+          "id": "AVG_01",
+          "intent": "corrélation",
+          "type": "hydraulique",
+          "question": "Quels tronçons ont plus de 40 ans et un petit diamètre (<80 mm) ?"
+        },
+        {
+          "id": "AVG_02",
+          "intent": "spatial",
+          "type": "géographique",
+          "question": "Quelles conduites traversent les zones urbaines ou les centres-villes ?"
+        },
+        {
+          "id": "AVG_03",
+          "intent": "corrélation",
+          "type": "hydraulique",
+          "question": "Quels tronçons sont connectés à plus de 10 branchements ?"
+        },
+        {
+          "id": "AVG_04",
+          "intent": "agrégation",
+          "type": "patrimonial",
+          "question": "Quelles communes possèdent un réseau plus ancien ou plus neuf que la moyenne ?"
+        },
+        {
+          "id": "AVG_05",
+          "intent": "diagnostic",
+          "type": "maintenance",
+          "question": "Quelles conduites ont connu des casses sur canalisations, branchements ou accessoires ?"
+        },
+        {
+          "id": "AVG_06",
+          "intent": "agrégation",
+          "type": "statistique",
+          "question": "Quelle longueur de réseau par période décennale ?"
+        },
+        {
+          "id": "AVG_07",
+          "intent": "corrélation",
+          "type": "hydraulique",
+          "question": "Quelles zones combinent conduites anciennes et forte densité d'abonnés ?"
+        },
+        {
+          "id": "AVG_08",
+          "intent": "topologie",
+          "type": "hydraulique",
+          "question": "Quels tronçons appartiennent à deux secteurs hydrauliques ?"
+        },
+        {
+          "id": "AVG_09",
+          "intent": "statistique",
+          "type": "matériau",
+          "question": "Quelle part du réseau est en matériau sensible (amiante-ciment, fonte grise) ?"
+        },
+        {
+          "id": "AVG_10",
+          "intent": "spatial",
+          "type": "géographique",
+          "question": "Quelles conduites passent sous une voie ferrée ou une nationale ?"
+        }
+      ],
+      "junior_hydraulic_mc": [
+        {
+          "id": "JUN_01",
+          "intent": "corrélation",
+          "type": "hydraulique",
+          "question": "Quels tronçons combinent âge >40 ans, diamètre <80 mm et matériau sensible ?"
+        },
+        {
+          "id": "JUN_02",
+          "intent": "diagnostic",
+          "type": "maintenance",
+          "question": "Quels secteurs cumulent le plus d'interventions ces cinq dernières années ?"
+        },
+        {
+          "id": "JUN_03",
+          "intent": "diagnostic",
+          "type": "maintenance",
+          "question": "Quels secteurs cumulent le plus d'interventions durant l'été ou l'hiver ?"
+        },
+        {
+          "id": "JUN_04",
+          "intent": "topologie",
+          "type": "hydraulique",
+          "question": "Quelles parties du réseau sont alimentées par un même réservoir ?"
+        },
+        {
+          "id": "JUN_05",
+          "intent": "diagnostic",
+          "type": "maintenance",
+          "question": "Quelle est la longueur de conduites avec plus de 3 ou 4 casses historiques ?"
+        },
+        {
+          "id": "JUN_06",
+          "intent": "corrélation",
+          "type": "hydraulique",
+          "question": "Quels tronçons appartiennent à des zones de pression élevée (statique) ?"
+        },
+        {
+          "id": "JUN_07",
+          "intent": "topologie",
+          "type": "hydraulique",
+          "question": "Quels tronçons sont en antenne ?"
+        },
+        {
+          "id": "JUN_08",
+          "intent": "lecture",
+          "type": "hydraulique",
+          "question": "Combien de purges et de ventouses sur la zone ?"
+        },
+        {
+          "id": "JUN_09",
+          "intent": "diagnostic",
+          "type": "hydraulique",
+          "question": "Toutes les antennes possèdent-elles une purge et une ventouse ?"
+        },
+        {
+          "id": "JUN_10",
+          "intent": "couverture",
+          "type": "sécurité_incendie",
+          "question": "Quelle longueur de tronçons est couverte par un hydrant à moins de 200 m linéaire (par la rue) ?"
+        },
+        {
+          "id": "JUN_11",
+          "intent": "agrégation",
+          "type": "patrimonial",
+          "question": "Quel est le linéaire de conduite selon la classe de géoréférencement (A/B/C) ?"
+        },
+        {
+          "id": "JUN_12",
+          "intent": "diagnostic",
+          "type": "patrimonial",
+          "question": "Combien de conduites nécessitent une mise à jour du géoréférencement ?"
+        }
+      ],
+      "leakmited_expert": [
+        {
+          "id": "EXP_01",
+          "intent": "simulation",
+          "type": "hydraulique",
+          "question": "Quels tronçons deviennent inaccessibles si l'on ferme la vanne X ?"
+        },
+        {
+          "id": "EXP_02",
+          "intent": "topologie",
+          "type": "hydraulique",
+          "question": "Quels tronçons assurent la liaison hydraulique entre deux réservoirs ?"
+        },
+        {
+          "id": "EXP_03",
+          "intent": "diagnostic",
+          "type": "hydraulique",
+          "question": "Où se situent les feeders du réseau ?"
+        },
+        {
+          "id": "EXP_04",
+          "intent": "topologie",
+          "type": "hydraulique",
+          "question": "Quels tronçons se situent à plus de 3 km du point de production le plus proche ?"
+        },
+        {
+          "id": "EXP_05",
+          "intent": "simulation",
+          "type": "hydraulique",
+          "question": "Quelle zone serait isolée en cas de casse sur la conduite principale ?"
+        },
+        {
+          "id": "EXP_06",
+          "intent": "diagnostic",
+          "type": "hydraulique",
+          "question": "Quels secteurs ne possèdent pas de redondance hydraulique ?"
+        },
+        {
+          "id": "EXP_07",
+          "intent": "topologie",
+          "type": "hydraulique",
+          "question": "Quelles conduites relient plusieurs communes à des points d'entrée différents ?"
+        },
+        {
+          "id": "EXP_08",
+          "intent": "spatial",
+          "type": "patrimonial",
+          "question": "Quelle part du réseau est située à plus de 10 m du domaine public ?"
+        },
+        {
+          "id": "EXP_09",
+          "intent": "corrélation",
+          "type": "réseau",
+          "question": "Quelles conduites constituent les axes structurants du réseau (connectant le plus grand nombre de nœuds) ?"
+        },
+        {
+          "id": "EXP_10",
+          "intent": "spatial",
+          "type": "patrimonial",
+          "question": "Quelle conduite passe dans la parcelle CH203 ?"
+        },
+        {
+          "id": "EXP_11",
+          "intent": "diagnostic",
+          "type": "sécurité_incendie",
+          "question": "Quels hydrants n'ont pas les débits normalisés ?"
+        },
+        {
+          "id": "EXP_12",
+          "intent": "agrégation",
+          "type": "réseau",
+          "question": "Combien de vannes réseau et de bouches à clé sur ma commune ?"
+        },
+        {
+          "id": "EXP_13",
+          "intent": "statistique",
+          "type": "branchement",
+          "question": "Quelle est la répartition des diamètres nominaux (DN) des branchements ?"
+        },
+        {
+          "id": "EXP_14",
+          "intent": "diagnostic",
+          "type": "performance",
+          "question": "Quel est l'indice de localisation de perte (ILP) et le rendement à une adresse donnée ?"
+        }
+      ]
+    }
+  }
+}
+
