@@ -7,8 +7,9 @@
     "date": "2025-11-19",
     "license": "MIT",
     "tags": ["twin", "questions", "jeu de données"],
+    "playablePlaylist": ["N00B", "EASY"],
     "levels": {
-      "n00b": [
+      "N00B": [
         {
           "id": "N00B_01",
           "intent": "lecture",
@@ -88,7 +89,7 @@
           "question": "Quelles sont les canalisations qui ont le plus d'abonnés ?"
         }
       ],
-      "easy": [
+      "EASY": [
         {
           "id": "EASY_01",
           "intent": "agrégation",
@@ -156,7 +157,7 @@
           "question": "Quelle est la longueur de réseau par type de gestion (publique/privée) ou délégataire ?"
         }
       ],
-      "average_hydraulic_mc": [
+      "AVG_HYDRAULIC_MC": [
         {
           "id": "AVG_01",
           "intent": "corrélation",
@@ -218,7 +219,7 @@
           "question": "Quelles conduites passent sous une voie ferrée ou une nationale ?"
         }
       ],
-      "junior_hydraulic_mc": [
+      "JUNIOR_HYDRAULIC_MC": [
         {
           "id": "JUN_01",
           "intent": "corrélation",
@@ -292,7 +293,7 @@
           "question": "Combien de conduites nécessitent une mise à jour du géoréférencement ?"
         }
       ],
-      "leakmited_expert": [
+      "LEAKMITED_EXPERT": [
         {
           "id": "EXP_01",
           "intent": "simulation",
