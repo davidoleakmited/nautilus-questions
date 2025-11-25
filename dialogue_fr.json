@@ -7,7 +7,7 @@
       "date": "2025-11-19",
       "license": "MIT",
       "tags": ["twin", "questions", "dialogue"],
-      "playablePlaylist": ["N00B", "EASY"],
+      "playablePlaylist": ["N00B"],
       "levels": {
         "N00B": [
           {
