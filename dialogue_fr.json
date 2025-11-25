@@ -1,0 +1,59 @@
+{
+    "twin": {
+      "author": "David Ouanounou",
+      "title": "Dialogue pour le jeu de données Twin",
+      "description": "Questions pour le jeu de données Twin",
+      "version": "1.0.0",
+      "date": "2025-11-19",
+      "license": "MIT",
+      "tags": ["twin", "questions", "dialogue"],
+      "playablePlaylist": ["N00B", "EASY"],
+      "levels": {
+        "N00B": [
+          {
+            "id": "N00B_01",
+            "intent": "lecture",
+            "type": "attributaire",
+            "question": "Quelle est la longueur totale du réseau ?"
+          },
+          {
+            "id": "N00B_02",
+            "intent": "lecture",
+            "type": "attributaire",
+            "question": "Avec ou sans les branchements ?"
+          },
+          {
+            "id": "N00B_03",
+            "intent": "lecture",
+            "type": "attributaire",
+            "question": "Lorsque tu dis que le réseau fait 1 984 kilomètres de long est-ce que tu comptes seulement les tronçons ?"
+          },
+          {
+            "id": "N00B_04",
+            "intent": "lecture",
+            "type": "attributaire",
+            "question": "Du coup quelle est la longueur totale des branchements ?"
+          },
+          {
+            "id": "N00B_05",
+            "intent": "lecture",
+            "type": "attributaire",
+            "question": "Et en kilomètres ?"
+          },
+          {
+            "id": "N00B_06",
+            "intent": "lecture",
+            "type": "spatial",
+            "question": "Quelle est la commune qui a le plus de branchements ?"
+          },
+          {
+            "id": "N00B_07",
+            "intent": "lecture",
+            "type": "attributaire",
+            "question": "En pourcentage de la longueur totale de Le Neubourg, cela représente combien ?"
+          }
+        ]
+      }
+    }
+  }
+  
